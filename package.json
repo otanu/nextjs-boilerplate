@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prettier": "prettier --write .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -30,8 +31,10 @@
     "css-loader": "^6.2.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "^8.3.0",
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
+    "prettier": "^2.3.2",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "tailwindcss": "^2.2.8",
