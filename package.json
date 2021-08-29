@@ -1,7 +1,8 @@
 {
-  "name": "nextjs-ts-storybook-tailwind",
+  "name": "nextjs-boilerplate",
+  "description": "Next.js + ESLint + TypeScript + Tailwind + Storybook + Prettier + Jest",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
