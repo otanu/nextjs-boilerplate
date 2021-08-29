@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   stories: ['../stories/**/*.stories.mdx', '../stories/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
@@ -5,6 +7,11 @@ module.exports = {
     builder: 'webpack5',
   },
   webpackFinal: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname + '/..'),
+    }
+
     config.module.rules.push({
       test: /\.scss$/,
       sideEffects: true,
